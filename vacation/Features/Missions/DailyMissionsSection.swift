@@ -40,7 +40,9 @@ private struct TodayMissions: View {
     @Query private var stars: [DailyStar]
     @State private var saveFailed = false
     @State private var showCelebration = false
+    @State private var showTreasure = false
     @State private var earnedNewStar = false
+    @State private var pendingTreasureAfterCelebration = false
 
     init(dayKey: String) {
         self.dayKey = dayKey
@@ -90,8 +92,17 @@ private struct TodayMissions: View {
                 saveFailed = true
             }
         }
-        .sheet(isPresented: $showCelebration) {
+        .sheet(isPresented: $showCelebration, onDismiss: {
+            if pendingTreasureAfterCelebration {
+                pendingTreasureAfterCelebration = false
+                showTreasure = true
+            }
+        }) {
             DailyMissionCelebration(earnedNewStar: earnedNewStar)
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showTreasure) {
+            TreasureChestExperience()
                 .presentationDragIndicator(.visible)
         }
         .alert("Let’s try again", isPresented: $saveFailed) {
@@ -116,6 +127,9 @@ private struct TodayMissions: View {
             let awarded = try DailyStarAward.insertIfEarned(in: context, on: record.completedAt)
             try context.save()
             earnedNewStar = awarded
+            if awarded {
+                pendingTreasureAfterCelebration = try RewardUnlocking.status(in: context).isTreasureAvailable
+            }
             let completedDay = record.dayKey
             let todayRecords = try context.fetch(FetchDescriptor<RoutineCompletion>(predicate: #Predicate { $0.dayKey == completedDay }))
             // Only a new completion can trigger this; loading saved history never replays it.

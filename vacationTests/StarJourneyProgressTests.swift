@@ -11,6 +11,7 @@ final class StarJourneyProgressTests: XCTestCase {
         XCTAssertEqual(StarJourneyProgress(total: 3).message, "3 stars earned! 4 more until your surprise!")
         XCTAssertEqual(StarJourneyProgress(total: 6).message, "Just 1 more star until your surprise!")
         XCTAssertEqual(StarJourneyProgress(total: 7).message, "Your surprise is ready! 🎁")
+        XCTAssertEqual(StarJourneyProgress(total: 7, claimedRewardCycles: 1).message, "Let’s start our next star adventure!")
     }
 
     func testProgressAfterClaimedRewardCycles() {

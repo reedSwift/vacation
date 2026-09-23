@@ -4,6 +4,7 @@ enum KidsActivity: String, CaseIterable, Identifiable {
     case packing = "Pack My Suitcase"
     case stickers = "My Stickers"
     case adventure = "My Adventure"
+    case treasures = "My Treasures"
 
     var id: String { rawValue }
     var emoji: String {
@@ -11,6 +12,7 @@ enum KidsActivity: String, CaseIterable, Identifiable {
         case .packing: "🧳"
         case .stickers: "⭐"
         case .adventure: "✈️"
+        case .treasures: "✨"
         }
     }
     var color: Color {
@@ -18,6 +20,7 @@ enum KidsActivity: String, CaseIterable, Identifiable {
         case .packing: .orange
         case .stickers: .yellow
         case .adventure: .teal
+        case .treasures: .purple
         }
     }
 }

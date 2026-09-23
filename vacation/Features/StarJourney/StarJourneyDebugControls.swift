@@ -14,6 +14,7 @@ struct StarJourneyDebugControls: View {
                 Button("Remove today’s star") { removeToday() }
                 Button("Seed 1 previous Daily Star") { seed(count: 1) }
                 Button("Seed 7 previous Daily Stars") { seed(count: 7) }
+                Button("Make current treasure available") { makeTreasureAvailable() }
                 Button("Clear Daily Star test data", role: .destructive) { confirmClear = true }
             }
             .buttonStyle(.bordered)
@@ -63,6 +64,18 @@ struct StarJourneyDebugControls: View {
             try context.save()
             seededDays = ""
         } catch { context.rollback(); failed = true }
+    }
+
+    private func makeTreasureAvailable() {
+        do {
+            let status = try RewardUnlocking.status(in: context)
+            guard !status.isTreasureAvailable else { return }
+            let targetStars = (status.totalRewardCyclesClaimed + 1) * RewardJourneyStatus.starsPerReward
+            seed(count: max(0, targetStars - status.totalDailyStars))
+        } catch {
+            context.rollback()
+            failed = true
+        }
     }
 }
 #endif

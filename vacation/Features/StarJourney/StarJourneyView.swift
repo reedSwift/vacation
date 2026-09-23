@@ -4,6 +4,7 @@ import SwiftData
 struct StarJourneyView: View {
     @Query private var stars: [DailyStar]
     @Query private var rewardUnlocks: [RewardUnlock]
+    @State private var showTreasure = false
 
     private var rewardStatus: RewardJourneyStatus {
         RewardUnlocking.status(dailyStars: stars, rewardUnlocks: rewardUnlocks)
@@ -26,9 +27,17 @@ struct StarJourneyView: View {
                 HStack(spacing: 12) {
                     Image(systemName: "arrow.right")
                         .font(.title3.bold())
-                    Text("🎁").font(.system(size: 42))
+                        .accessibilityHidden(true)
+                    if rewardStatus.isTreasureAvailable {
+                        Button { showTreasure = true } label: {
+                            Text("🎁").font(.system(size: 42))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Open your surprise treasure")
+                    } else {
+                        Text("🎁").font(.system(size: 42))
+                    }
                 }
-                .accessibilityHidden(true)
                 Text(progress.message)
                     .font(.system(.title3, design: .rounded, weight: .bold))
                     .multilineTextAlignment(.center)
@@ -40,6 +49,10 @@ struct StarJourneyView: View {
             #if DEBUG
             StarJourneyDebugControls()
             #endif
+        }
+        .sheet(isPresented: $showTreasure) {
+            TreasureChestExperience()
+                .presentationDragIndicator(.visible)
         }
     }
 
