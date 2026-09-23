@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D52DD48F306009F000B10E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D52DD479306009EF00B10E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D52DD480306009EF00B10E68;
+			remoteInfo = vacation;
+		};
+		D52DD499306009F000B10E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D52DD479306009EF00B10E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D52DD480306009EF00B10E68;
+			remoteInfo = vacation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D52DD481306009EF00B10E68 /* vacation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vacation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52DD48E306009F000B10E68 /* vacationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vacationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52DD498306009F000B10E68 /* vacationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vacationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D52DD4FA30608C5200B10E68 /* Exceptions for "vacation" folder in "vacation" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D52DD480306009EF00B10E68 /* vacation */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D52DD483306009EF00B10E68 /* vacation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D52DD4FA30608C5200B10E68 /* Exceptions for "vacation" folder in "vacation" target */,
+			);
+			path = vacation;
+			sourceTree = "<group>";
+		};
+		D52DD491306009F000B10E68 /* vacationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = vacationTests;
+			sourceTree = "<group>";
+		};
+		D52DD49B306009F000B10E68 /* vacationUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = vacationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D52DD47E306009EF00B10E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		D52DD48B306009F000B10E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		D52DD495306009F000B10E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D52DD478306009EF00B10E68 = {
+			isa = PBXGroup;
+			children = (
+				D52DD483306009EF00B10E68 /* vacation */,
+				D52DD491306009F000B10E68 /* vacationTests */,
+				D52DD49B306009F000B10E68 /* vacationUITests */,
+				D52DD482306009EF00B10E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D52DD482306009EF00B10E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D52DD481306009EF00B10E68 /* vacation.app */,
+				D52DD48E306009F000B10E68 /* vacationTests.xctest */,
+				D52DD498306009F000B10E68 /* vacationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D52DD480306009EF00B10E68 /* vacation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52DD4A0306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacation" */;
+			buildPhases = (
+				D52DD47D306009EF00B10E68 /* Sources */,
+				D52DD47E306009EF00B10E68 /* Frameworks */,
+				D52DD47F306009EF00B10E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				D52DD483306009EF00B10E68 /* vacation */,
+			);
+			name = vacation;
+			productName = vacation;
+			productReference = D52DD481306009EF00B10E68 /* vacation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D52DD48D306009F000B10E68 /* vacationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52DD4A3306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacationTests" */;
+			buildPhases = (
+				D52DD48A306009F000B10E68 /* Sources */,
+				D52DD48B306009F000B10E68 /* Frameworks */,
+				D52DD48C306009F000B10E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52DD490306009F000B10E68 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D52DD491306009F000B10E68 /* vacationTests */,
+			);
+			name = vacationTests;
+			productName = vacationTests;
+			productReference = D52DD48E306009F000B10E68 /* vacationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D52DD497306009F000B10E68 /* vacationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52DD4A6306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacationUITests" */;
+			buildPhases = (
+				D52DD494306009F000B10E68 /* Sources */,
+				D52DD495306009F000B10E68 /* Frameworks */,
+				D52DD496306009F000B10E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D52DD49A306009F000B10E68 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D52DD49B306009F000B10E68 /* vacationUITests */,
+			);
+			name = vacationUITests;
+			productName = vacationUITests;
+			productReference = D52DD498306009F000B10E68 /* vacationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D52DD479306009EF00B10E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					D52DD480306009EF00B10E68 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					D52DD48D306009F000B10E68 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D52DD480306009EF00B10E68;
+					};
+					D52DD497306009F000B10E68 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D52DD480306009EF00B10E68;
+					};
+				};
+			};
+			buildConfigurationList = D52DD47C306009EF00B10E68 /* Build configuration list for PBXProject "vacation" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D52DD478306009EF00B10E68;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D52DD482306009EF00B10E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D52DD480306009EF00B10E68 /* vacation */,
+				D52DD48D306009F000B10E68 /* vacationTests */,
+				D52DD497306009F000B10E68 /* vacationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D52DD47F306009EF00B10E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		D52DD48C306009F000B10E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		D52DD496306009F000B10E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D52DD47D306009EF00B10E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D52DD48A306009F000B10E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D52DD494306009F000B10E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D52DD490306009F000B10E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D52DD480306009EF00B10E68 /* vacation */;
+			targetProxy = D52DD48F306009F000B10E68 /* PBXContainerItemProxy */;
+		};
+		D52DD49A306009F000B10E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D52DD480306009EF00B10E68 /* vacation */;
+			targetProxy = D52DD499306009F000B10E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D52DD49E306009F000B10E68 /* Debug configuration for PBXProject "vacation" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D52DD49F306009F000B10E68 /* Release configuration for PBXProject "vacation" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D52DD4A1306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacation" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vacation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D52DD4A2306009F000B10E68 /* Release configuration for PBXNativeTarget "vacation" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vacation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D52DD4A4306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacationTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vacation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vacation";
+			};
+			name = Debug;
+		};
+		D52DD4A5306009F000B10E68 /* Release configuration for PBXNativeTarget "vacationTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vacation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vacation";
+			};
+			name = Release;
+		};
+		D52DD4A7306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacationUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vacation;
+			};
+			name = Debug;
+		};
+		D52DD4A8306009F000B10E68 /* Release configuration for PBXNativeTarget "vacationUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9S846X8QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reedgen.vacationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vacation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D52DD47C306009EF00B10E68 /* Build configuration list for PBXProject "vacation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52DD49E306009F000B10E68 /* Debug configuration for PBXProject "vacation" */,
+				D52DD49F306009F000B10E68 /* Release configuration for PBXProject "vacation" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D52DD4A0306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52DD4A1306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacation" */,
+				D52DD4A2306009F000B10E68 /* Release configuration for PBXNativeTarget "vacation" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D52DD4A3306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52DD4A4306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacationTests" */,
+				D52DD4A5306009F000B10E68 /* Release configuration for PBXNativeTarget "vacationTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D52DD4A6306009F000B10E68 /* Build configuration list for PBXNativeTarget "vacationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52DD4A7306009F000B10E68 /* Debug configuration for PBXNativeTarget "vacationUITests" */,
+				D52DD4A8306009F000B10E68 /* Release configuration for PBXNativeTarget "vacationUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D52DD479306009EF00B10E68 /* Project object */;
+	validationLevel = 1;
+}
