@@ -21,7 +21,11 @@ struct KidsHomeView: View {
             }
             #endif
             .navigationDestination(for: KidsActivity.self) { activity in
-                KidsActivityPlaceholder(activity: activity)
+                if activity == .treasures {
+                    MyTreasuresView()
+                } else {
+                    KidsActivityPlaceholder(activity: activity)
+                }
             }
         }
         .sensoryFeedback(.selection, trigger: path)
@@ -56,7 +60,15 @@ private struct KidsHomeContent: View {
 
                     StarJourneyView()
 
+                    NavigationLink(value: KidsActivity.treasures) {
+                        TreasuresPreviewView()
+                    }
+                    .buttonStyle(.plain)
+
                     ForEach(KidsActivity.allCases) { activity in
+                        if activity == .treasures {
+                            EmptyView()
+                        } else {
                         NavigationLink(value: activity) {
                             HStack(spacing: 16) {
                                 Text(activity.emoji)
@@ -75,6 +87,7 @@ private struct KidsHomeContent: View {
                             .background(.white.opacity(0.85), in: RoundedRectangle(cornerRadius: 28))
                         }
                         .buttonStyle(.plain)
+                        }
                     }
                 }
                 .foregroundStyle(Color(red: 0.08, green: 0.26, blue: 0.34))
